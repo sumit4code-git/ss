@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <pre>
+        cross axis-alignment
+************
+Column(
+                     modifier = Modifier
+//                    .fillMaxHeight(0.4f)
+                         .height(300.dp)
+                    .background(Color.Green)
+                    .width(200.dp)
+                         .requiredHeight(300.dp)
+                         .padding(top = 30.dp)
+                         .border(5.dp,Color.Black),
+                horizontalAlignment = Alignment.CenterHorizontally,
+                verticalArrangement = Arrangement.Center
+            ) {
+                Text(text = "Hello", modifier = Modifier.clickable {
+                    Toast.makeText(this@MainActivity,"clicked",Toast.LENGTH_SHORT).show()
+                }.padding(start = 100.dp))
+                Text(text = "world")
+                Text(text = "Sumit!")
+            }
+text clcick isssue.
+*****************
+Card in matterial 3
+    </pre>
+</body>
+</html>
